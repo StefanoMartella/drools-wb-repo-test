@@ -9,8 +9,11 @@ public class PointConcept implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "score")
+   @org.kie.api.definition.type.Label("score")
    private java.lang.Double score;
+
+   @org.kie.api.definition.type.Label(value = "test")
+   private java.lang.Byte test;
 
    public PointConcept()
    {
@@ -26,9 +29,20 @@ public class PointConcept implements java.io.Serializable
       this.score = score;
    }
 
-   public PointConcept(java.lang.Double score)
+   public java.lang.Byte getTest()
+   {
+      return this.test;
+   }
+
+   public void setTest(java.lang.Byte test)
+   {
+      this.test = test;
+   }
+
+   public PointConcept(java.lang.Double score, java.lang.Byte test)
    {
       this.score = score;
+      this.test = test;
    }
 
 }
