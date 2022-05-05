@@ -12,9 +12,6 @@ public class PointConcept implements java.io.Serializable
    @org.kie.api.definition.type.Label("score")
    private java.lang.Double score;
 
-   @org.kie.api.definition.type.Label(value = "test")
-   private java.math.BigDecimal test;
-
    public PointConcept()
    {
    }
@@ -29,20 +26,9 @@ public class PointConcept implements java.io.Serializable
       this.score = score;
    }
 
-   public java.math.BigDecimal getTest()
-   {
-      return this.test;
-   }
-
-   public void setTest(java.math.BigDecimal test)
-   {
-      this.test = test;
-   }
-
-   public PointConcept(java.lang.Double score, java.math.BigDecimal test)
+   public PointConcept(java.lang.Double score)
    {
       this.score = score;
-      this.test = test;
    }
 
 }
