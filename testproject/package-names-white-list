@@ -1,0 +1,12 @@
+eu.trentorise.game.managers.drools
+eu.trentorise.game.task
+eu.trentorise.game.core
+eu.trentorise.game.repo
+eu.trentorise.game.utils
+eu.trentorise.game.model
+eu.trentorise.game.model.core
+eu.trentorise.game.services
+eu.trentorise.game.notification
+eu.trentorise.game
+eu.trentorise.game.config
+eu.trentorise.game.managers
