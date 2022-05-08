@@ -3,19 +3,66 @@
   <modelVersion>1.0</modelVersion>
   <attributes/>
   <metadataList/>
-  <lhs/>
-  <rhs/>
+  <lhs>
+    <fact>
+      <constraintList>
+        <constraints>
+          <fieldConstraint>
+            <value>$minScore</value>
+            <operator>&gt;</operator>
+            <constraintValueType>7</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>PointConcept</factType>
+            <fieldName>score</fieldName>
+            <fieldType>Double</fieldType>
+          </fieldConstraint>
+        </constraints>
+      </constraintList>
+      <factType>PointConcept</factType>
+      <isNegated>false</isNegated>
+      <window>
+        <parameters/>
+      </window>
+    </fact>
+  </lhs>
+  <rhs>
+    <freeForm>
+      <text>System.out.println(@{templateKeyTest});</text>
+    </freeForm>
+  </rhs>
   <imports>
-    <imports/>
+    <imports>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>eu.trentorise.game.model.PointConcept</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+    </imports>
   </imports>
   <packageName>com.testproject</packageName>
   <isNegated>false</isNegated>
   <table>
     <entry>
+      <string>templateKeyTest</string>
+      <list>
+        <string>&quot;Prova&quot;</string>
+      </list>
+    </entry>
+    <entry>
       <string>__ID_KOL_NAME__</string>
-      <list/>
+      <list>
+        <string>1</string>
+      </list>
+    </entry>
+    <entry>
+      <string>$minScore</string>
+      <list>
+        <string>0</string>
+      </list>
     </entry>
   </table>
-  <idCol>0</idCol>
-  <rowsCount>0</rowsCount>
+  <idCol>1</idCol>
+  <rowsCount>1</rowsCount>
 </rule>
