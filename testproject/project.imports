@@ -4,12 +4,6 @@
       <import>
         <type>java.lang.Number</type>
       </import>
-      <import>
-        <type>eu.trentorise.game.model.*</type>
-      </import>
-      <import>
-        <type>eu.trentorise.game.model.Reward</type>
-      </import>
     </imports>
   </imports>
   <version>1.0</version>
