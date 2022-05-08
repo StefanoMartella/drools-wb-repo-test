@@ -1,9 +1,0 @@
-package com;
-
-import java.lang.Number;
-
-rule "testGuidedRule2"
-	dialect "mvel"
-	when
-	then
-end
