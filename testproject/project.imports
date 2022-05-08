@@ -1,10 +1,6 @@
 <configuration>
   <imports>
-    <imports>
-      <import>
-        <type>eu.trentorise.game.model.Reward</type>
-      </import>
-    </imports>
+    <imports/>
   </imports>
   <version>1.0</version>
 </configuration>
