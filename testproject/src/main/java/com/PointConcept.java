@@ -12,6 +12,9 @@ public class PointConcept implements java.io.Serializable
    @org.kie.api.definition.type.Label("score")
    private java.lang.Double score;
 
+   @org.kie.api.definition.type.Label(value = "test")
+   private eu.trentorise.game.model.ChallengeChoice test;
+
    public PointConcept()
    {
    }
@@ -26,9 +29,21 @@ public class PointConcept implements java.io.Serializable
       this.score = score;
    }
 
-   public PointConcept(java.lang.Double score)
+   public eu.trentorise.game.model.ChallengeChoice getTest()
+   {
+      return this.test;
+   }
+
+   public void setTest(eu.trentorise.game.model.ChallengeChoice test)
+   {
+      this.test = test;
+   }
+
+   public PointConcept(java.lang.Double score,
+         eu.trentorise.game.model.ChallengeChoice test)
    {
       this.score = score;
+      this.test = test;
    }
 
 }
