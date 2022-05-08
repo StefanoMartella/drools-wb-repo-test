@@ -6,7 +6,14 @@
   <lhs/>
   <rhs/>
   <imports>
-    <imports/>
+    <imports>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>eu.trentorise.game.model.PointConcept</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>eu.trentorise.game.model.TeamState</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+    </imports>
   </imports>
   <packageName>com</packageName>
   <isNegated>false</isNegated>
