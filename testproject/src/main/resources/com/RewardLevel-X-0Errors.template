@@ -45,50 +45,24 @@
               <index>2147483647</index>
             </expression>
             <parameters/>
-            <factType>InputData</factType>
-            <fieldName>get</fieldName>
-            <fieldType>java.lang.Object</fieldType>
+            <fieldName>data[&quot;errors&quot;]</fieldName>
+            <fieldType>java.lang.String</fieldType>
             <expLeftSide>
               <binding>$errors</binding>
               <parts>
                 <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
-                  <next class="field">
+                  <next class="text">
                     <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
-                    <next class="method">
-                      <prev class="field" reference="../.."/>
-                      <name>get</name>
-                      <classType>java.lang.Object</classType>
-                      <genericType>java.lang.Object</genericType>
-                      <params class="linked-hash-map">
-                        <entry>
-                          <org.drools.workbench.models.datamodel.rule.ExpressionMethodParameterDefinition>
-                            <index>0</index>
-                            <dataType>java.lang.Object</dataType>
-                          </org.drools.workbench.models.datamodel.rule.ExpressionMethodParameterDefinition>
-                          <expression>
-                            <parts>
-                              <org.drools.workbench.models.datamodel.rule.ExpressionMethodParameter>
-                                <name>errors</name>
-                                <classType>java.lang.Object</classType>
-                                <genericType>java.lang.Object</genericType>
-                              </org.drools.workbench.models.datamodel.rule.ExpressionMethodParameter>
-                            </parts>
-                            <index>0</index>
-                          </expression>
-                        </entry>
-                      </params>
-                    </next>
-                    <name>data</name>
-                    <classType>java.util.Map</classType>
-                    <genericType>java.util.Map</genericType>
+                    <name>data[&quot;errors&quot;]</name>
+                    <classType>java.lang.String</classType>
+                    <genericType>String</genericType>
                   </next>
                   <name>InputData</name>
                   <classType>InputData</classType>
                   <genericType>InputData</genericType>
                   <factType>InputData</factType>
                 </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
-                <field reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
-                <method reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next/next"/>
+                <text reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
               </parts>
               <index>2147483647</index>
             </expLeftSide>
@@ -101,50 +75,24 @@
               <index>2147483647</index>
             </expression>
             <parameters/>
-            <factType>InputData</factType>
-            <fieldName>get</fieldName>
-            <fieldType>java.lang.Object</fieldType>
+            <fieldName>data[&quot;timeSpent&quot;]</fieldName>
+            <fieldType>java.lang.String</fieldType>
             <expLeftSide>
               <binding>$timeSpent</binding>
               <parts>
                 <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
-                  <next class="field">
+                  <next class="text">
                     <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
-                    <next class="method">
-                      <prev class="field" reference="../.."/>
-                      <name>get</name>
-                      <classType>java.lang.Object</classType>
-                      <genericType>java.lang.Object</genericType>
-                      <params class="linked-hash-map">
-                        <entry>
-                          <org.drools.workbench.models.datamodel.rule.ExpressionMethodParameterDefinition>
-                            <index>0</index>
-                            <dataType>java.lang.Object</dataType>
-                          </org.drools.workbench.models.datamodel.rule.ExpressionMethodParameterDefinition>
-                          <expression>
-                            <parts>
-                              <org.drools.workbench.models.datamodel.rule.ExpressionMethodParameter>
-                                <name>timeSpent</name>
-                                <classType>java.lang.Object</classType>
-                                <genericType>java.lang.Object</genericType>
-                              </org.drools.workbench.models.datamodel.rule.ExpressionMethodParameter>
-                            </parts>
-                            <index>0</index>
-                          </expression>
-                        </entry>
-                      </params>
-                    </next>
-                    <name>data</name>
-                    <classType>java.util.Map</classType>
-                    <genericType>java.util.Map</genericType>
+                    <name>data[&quot;timeSpent&quot;]</name>
+                    <classType>java.lang.String</classType>
+                    <genericType>String</genericType>
                   </next>
                   <name>InputData</name>
                   <classType>InputData</classType>
                   <genericType>InputData</genericType>
                   <factType>InputData</factType>
                 </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
-                <field reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
-                <method reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next/next"/>
+                <text reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
               </parts>
               <index>2147483647</index>
             </expLeftSide>
@@ -211,57 +159,31 @@
       <constraintList>
         <constraints>
           <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
-            <value>@{$level}</value>
+            <value>$level</value>
             <operator>==</operator>
-            <constraintValueType>1</constraintValueType>
+            <constraintValueType>7</constraintValueType>
             <expression>
               <parts/>
               <index>2147483647</index>
             </expression>
             <parameters/>
-            <factType>CustomData</factType>
-            <fieldName>get</fieldName>
-            <fieldType>java.lang.Object</fieldType>
+            <fieldName>this[&quot;level&quot;]</fieldName>
+            <fieldType>java.lang.String</fieldType>
             <expLeftSide>
               <parts>
                 <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
-                  <next class="field">
+                  <next class="text">
                     <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
-                    <next class="method">
-                      <prev class="field" reference="../.."/>
-                      <name>get</name>
-                      <classType>java.lang.Object</classType>
-                      <genericType>java.lang.Object</genericType>
-                      <params class="linked-hash-map">
-                        <entry>
-                          <org.drools.workbench.models.datamodel.rule.ExpressionMethodParameterDefinition>
-                            <index>0</index>
-                            <dataType>java.lang.Object</dataType>
-                          </org.drools.workbench.models.datamodel.rule.ExpressionMethodParameterDefinition>
-                          <expression>
-                            <parts>
-                              <org.drools.workbench.models.datamodel.rule.ExpressionMethodParameter>
-                                <name>&quot;level&quot;</name>
-                                <classType>java.lang.Object</classType>
-                                <genericType>java.lang.Object</genericType>
-                              </org.drools.workbench.models.datamodel.rule.ExpressionMethodParameter>
-                            </parts>
-                            <index>0</index>
-                          </expression>
-                        </entry>
-                      </params>
-                    </next>
-                    <name>this</name>
-                    <classType>CustomData</classType>
-                    <genericType>this</genericType>
+                    <name>this[&quot;level&quot;]</name>
+                    <classType>java.lang.String</classType>
+                    <genericType>String</genericType>
                   </next>
                   <name>CustomData</name>
                   <classType>CustomData</classType>
                   <genericType>CustomData</genericType>
                   <factType>CustomData</factType>
                 </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
-                <field reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
-                <method reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next/next"/>
+                <text reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
               </parts>
               <index>2147483647</index>
             </expLeftSide>
@@ -341,6 +263,12 @@ double rewardGold = baseGoldPointsReward;</text>
       <string>$baseGoldPointsReward</string>
       <list>
         <string>2.0</string>
+      </list>
+    </entry>
+    <entry>
+      <string>$level</string>
+      <list>
+        <string>level-1</string>
       </list>
     </entry>
     <entry>
