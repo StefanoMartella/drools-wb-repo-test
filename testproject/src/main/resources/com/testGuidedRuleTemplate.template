@@ -275,9 +275,14 @@
   </lhs>
   <rhs>
     <freeForm>
+      <text>int timeDelay = @{timeDelay};
+double basePointsReward = @{basePointsReward};
+double baseGoldPointsReward = @{baseGoldPointsReward};</text>
+    </freeForm>
+    <freeForm>
       <text>int time = (int) $timeSpent;
 double points = $pointScore.getScore();
-double rewardPoints =   50.0 + ( 50.0 - Math.round(time/2.0));</text>
+double rewardPoints =   basePointsReward + ( basePointsReward - Math.round(time/2.0));</text>
     </freeForm>
     <modify>
       <fieldValues>
@@ -292,11 +297,11 @@ double rewardPoints =   50.0 + ( 50.0 - Math.round(time/2.0));</text>
     </modify>
     <freeForm>
       <text>double goldcoins =  $goldCoinScore.getScore();
-double rewardGold = 2.0;</text>
+double rewardGold = baseGoldPointsReward;</text>
     </freeForm>
     <freeForm>
-      <text>if (time &lt; 60) {
-   rewardGold = rewardGold + 2.0
+      <text>if (time &lt; timeDelay) {
+   rewardGold = rewardGold + 1.0
 }</text>
     </freeForm>
     <modify>
@@ -343,9 +348,21 @@ double rewardGold = 2.0;</text>
       </list>
     </entry>
     <entry>
+      <string>baseGoldPointsReward</string>
+      <list>
+        <string>2.0</string>
+      </list>
+    </entry>
+    <entry>
       <string>$pointsName</string>
       <list>
         <string>points</string>
+      </list>
+    </entry>
+    <entry>
+      <string>basePointsReward</string>
+      <list>
+        <string>50.0</string>
       </list>
     </entry>
     <entry>
@@ -355,9 +372,15 @@ double rewardGold = 2.0;</text>
       </list>
     </entry>
     <entry>
+      <string>timeDelay</string>
+      <list>
+        <string>60</string>
+      </list>
+    </entry>
+    <entry>
       <string>$goldCoinsName</string>
       <list>
-        <string>gold conis</string>
+        <string>gold coins</string>
       </list>
     </entry>
     <entry>
