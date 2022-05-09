@@ -3,19 +3,244 @@
   <modelVersion>1.0</modelVersion>
   <attributes/>
   <metadataList/>
-  <lhs/>
+  <lhs>
+    <fact>
+      <constraintList>
+        <constraints>
+          <fieldConstraint>
+            <value>taskCompleted</value>
+            <operator>==</operator>
+            <constraintValueType>1</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>Action</factType>
+            <fieldName>id</fieldName>
+            <fieldType>String</fieldType>
+          </fieldConstraint>
+        </constraints>
+      </constraintList>
+      <factType>Action</factType>
+      <isNegated>false</isNegated>
+      <window>
+        <parameters/>
+      </window>
+    </fact>
+    <fact>
+      <constraintList>
+        <constraints>
+          <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+            <value>0.0</value>
+            <operator>==</operator>
+            <constraintValueType>3</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <fieldName>get</fieldName>
+            <fieldType>java.lang.Object</fieldType>
+            <expLeftSide>
+              <binding>$errors</binding>
+              <parts>
+                <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                  <next class="field">
+                    <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                    <next class="method">
+                      <prev class="field" reference="../.."/>
+                      <name>get</name>
+                      <classType>java.lang.Object</classType>
+                      <genericType>java.lang.Object</genericType>
+                      <params class="linked-hash-map">
+                        <entry>
+                          <org.drools.workbench.models.datamodel.rule.ExpressionMethodParameterDefinition>
+                            <index>0</index>
+                            <dataType>java.lang.Object</dataType>
+                          </org.drools.workbench.models.datamodel.rule.ExpressionMethodParameterDefinition>
+                          <expression>
+                            <parts>
+                              <org.drools.workbench.models.datamodel.rule.ExpressionMethodParameter>
+                                <name>&quot;errors&quot;</name>
+                                <classType>java.lang.Object</classType>
+                                <genericType>java.lang.Object</genericType>
+                              </org.drools.workbench.models.datamodel.rule.ExpressionMethodParameter>
+                            </parts>
+                            <index>0</index>
+                          </expression>
+                        </entry>
+                      </params>
+                    </next>
+                    <name>data</name>
+                    <classType>java.util.Map</classType>
+                    <genericType>java.util.Map</genericType>
+                  </next>
+                  <name>InputData</name>
+                  <classType>InputData</classType>
+                  <genericType>InputData</genericType>
+                  <factType>InputData</factType>
+                </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                <field reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                <method reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next/next"/>
+              </parts>
+              <index>2147483647</index>
+            </expLeftSide>
+          </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+          <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+            <value></value>
+            <constraintValueType>0</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <fieldName>get</fieldName>
+            <fieldType>java.lang.Object</fieldType>
+            <expLeftSide>
+              <binding>$timeSpent</binding>
+              <parts>
+                <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                  <next class="field">
+                    <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                    <next class="method">
+                      <prev class="field" reference="../.."/>
+                      <name>get</name>
+                      <classType>java.lang.Object</classType>
+                      <genericType>java.lang.Object</genericType>
+                      <params class="linked-hash-map">
+                        <entry>
+                          <org.drools.workbench.models.datamodel.rule.ExpressionMethodParameterDefinition>
+                            <index>0</index>
+                            <dataType>java.lang.Object</dataType>
+                          </org.drools.workbench.models.datamodel.rule.ExpressionMethodParameterDefinition>
+                          <expression>
+                            <parts>
+                              <org.drools.workbench.models.datamodel.rule.ExpressionMethodParameter>
+                                <name>&quot;timeSpent&quot;</name>
+                                <classType>java.lang.Object</classType>
+                                <genericType>java.lang.Object</genericType>
+                              </org.drools.workbench.models.datamodel.rule.ExpressionMethodParameter>
+                            </parts>
+                            <index>0</index>
+                          </expression>
+                        </entry>
+                      </params>
+                    </next>
+                    <name>data</name>
+                    <classType>java.util.Map</classType>
+                    <genericType>java.util.Map</genericType>
+                  </next>
+                  <name>InputData</name>
+                  <classType>InputData</classType>
+                  <genericType>InputData</genericType>
+                  <factType>InputData</factType>
+                </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                <field reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                <method reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next/next"/>
+              </parts>
+              <index>2147483647</index>
+            </expLeftSide>
+          </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+        </constraints>
+      </constraintList>
+      <factType>InputData</factType>
+      <isNegated>false</isNegated>
+      <window>
+        <parameters/>
+      </window>
+    </fact>
+    <fact>
+      <constraintList>
+        <constraints>
+          <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+            <value>level-1</value>
+            <operator>==</operator>
+            <constraintValueType>1</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <fieldName>get</fieldName>
+            <fieldType>java.lang.Object</fieldType>
+            <expLeftSide>
+              <parts>
+                <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                  <next class="field">
+                    <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                    <next class="method">
+                      <prev class="field" reference="../.."/>
+                      <name>get</name>
+                      <classType>java.lang.Object</classType>
+                      <genericType>java.lang.Object</genericType>
+                      <params class="linked-hash-map">
+                        <entry>
+                          <org.drools.workbench.models.datamodel.rule.ExpressionMethodParameterDefinition>
+                            <index>0</index>
+                            <dataType>java.lang.Object</dataType>
+                          </org.drools.workbench.models.datamodel.rule.ExpressionMethodParameterDefinition>
+                          <expression>
+                            <parts>
+                              <org.drools.workbench.models.datamodel.rule.ExpressionMethodParameter>
+                                <name>&quot;level&quot;</name>
+                                <classType>java.lang.Object</classType>
+                                <genericType>java.lang.Object</genericType>
+                              </org.drools.workbench.models.datamodel.rule.ExpressionMethodParameter>
+                            </parts>
+                            <index>0</index>
+                          </expression>
+                        </entry>
+                      </params>
+                    </next>
+                    <name>this</name>
+                    <classType>CustomData</classType>
+                    <genericType>this</genericType>
+                  </next>
+                  <name>CustomData</name>
+                  <classType>CustomData</classType>
+                  <genericType>CustomData</genericType>
+                  <factType>CustomData</factType>
+                </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                <field reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                <method reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next/next"/>
+              </parts>
+              <index>2147483647</index>
+            </expLeftSide>
+          </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+        </constraints>
+      </constraintList>
+      <factType>CustomData</factType>
+      <isNegated>false</isNegated>
+      <window>
+        <parameters/>
+      </window>
+    </fact>
+  </lhs>
   <rhs/>
   <imports>
-    <imports/>
+    <imports>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>eu.trentorise.game.model.CustomData</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>eu.trentorise.game.model.Action</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>eu.trentorise.game.model.InputData</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+    </imports>
   </imports>
   <packageName>com</packageName>
   <isNegated>false</isNegated>
   <table>
     <entry>
       <string>__ID_KOL_NAME__</string>
-      <list/>
+      <list>
+        <string>1</string>
+      </list>
     </entry>
   </table>
-  <idCol>0</idCol>
-  <rowsCount>0</rowsCount>
+  <idCol>1</idCol>
+  <rowsCount>1</rowsCount>
 </rule>
