@@ -1,5 +1,5 @@
 <rule>
-  <name>testGuidedRuleTemplate</name>
+  <name>RewardLevel-X-0Errors</name>
   <modelVersion>1.0</modelVersion>
   <attributes>
     <attribute>
@@ -45,6 +45,7 @@
               <index>2147483647</index>
             </expression>
             <parameters/>
+            <factType>InputData</factType>
             <fieldName>get</fieldName>
             <fieldType>java.lang.Object</fieldType>
             <expLeftSide>
@@ -100,6 +101,7 @@
               <index>2147483647</index>
             </expression>
             <parameters/>
+            <factType>InputData</factType>
             <fieldName>get</fieldName>
             <fieldType>java.lang.Object</fieldType>
             <expLeftSide>
