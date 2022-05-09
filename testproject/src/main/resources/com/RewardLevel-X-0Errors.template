@@ -231,7 +231,7 @@ double baseGoldPointsReward = @{$baseGoldPointsReward};</text>
     </freeForm>
     <freeForm>
       <text>int time = (int) $timeSpent;
-double points = $pointScore.getScore();
+double points = $pointsScore.getScore();
 double rewardPoints =   basePointsReward + ( basePointsReward - Math.round(time/2.0));</text>
     </freeForm>
     <modify>
