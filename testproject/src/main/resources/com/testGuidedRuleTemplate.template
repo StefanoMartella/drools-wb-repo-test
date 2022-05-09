@@ -45,6 +45,7 @@
               <index>2147483647</index>
             </expression>
             <parameters/>
+            <factType>InputData</factType>
             <fieldName>get</fieldName>
             <fieldType>java.lang.Object</fieldType>
             <expLeftSide>
@@ -100,6 +101,7 @@
               <index>2147483647</index>
             </expression>
             <parameters/>
+            <factType>InputData</factType>
             <fieldName>get</fieldName>
             <fieldType>java.lang.Object</fieldType>
             <expLeftSide>
@@ -215,6 +217,7 @@
               <index>2147483647</index>
             </expression>
             <parameters/>
+            <factType>CustomData</factType>
             <fieldName>get</fieldName>
             <fieldType>java.lang.Object</fieldType>
             <expLeftSide>
@@ -273,7 +276,8 @@
   <rhs>
     <freeForm>
       <text>int time = (int) $timeSpent;
-double points = $pointScore.getScore();</text>
+double points = $pointScore.getScore();
+double rewardPoints =   50.0 + ( 50.0 - Math.round(time/2.0));</text>
     </freeForm>
   </rhs>
   <imports>
