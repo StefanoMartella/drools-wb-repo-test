@@ -1,7 +1,12 @@
 <rule>
   <name>testGuidedRuleTemplate</name>
   <modelVersion>1.0</modelVersion>
-  <attributes/>
+  <attributes>
+    <attribute>
+      <attributeName>salience</attributeName>
+      <value>-1000</value>
+    </attribute>
+  </attributes>
   <metadataList/>
   <lhs>
     <fact>
@@ -153,6 +158,54 @@
     <fact>
       <constraintList>
         <constraints>
+          <fieldConstraint>
+            <operator>==</operator>
+            <constraintValueType>0</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>PointConcept</factType>
+            <fieldName>name</fieldName>
+            <fieldType>String</fieldType>
+          </fieldConstraint>
+        </constraints>
+      </constraintList>
+      <factType>PointConcept</factType>
+      <boundName>pointsScore</boundName>
+      <isNegated>false</isNegated>
+      <window>
+        <parameters/>
+      </window>
+    </fact>
+    <fact>
+      <constraintList>
+        <constraints>
+          <fieldConstraint>
+            <operator>==</operator>
+            <constraintValueType>0</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>PointConcept</factType>
+            <fieldName>name</fieldName>
+            <fieldType>String</fieldType>
+          </fieldConstraint>
+        </constraints>
+      </constraintList>
+      <factType>PointConcept</factType>
+      <boundName>goldCoinScore</boundName>
+      <isNegated>false</isNegated>
+      <window>
+        <parameters/>
+      </window>
+    </fact>
+    <fact>
+      <constraintList>
+        <constraints>
           <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
             <value>level-1</value>
             <operator>==</operator>
@@ -217,7 +270,12 @@
       </window>
     </fact>
   </lhs>
-  <rhs/>
+  <rhs>
+    <freeForm>
+      <text>int time = (int) $timeSpent;
+double points = $pointScore.getScore();</text>
+    </freeForm>
+  </rhs>
   <imports>
     <imports>
       <org.drools.workbench.models.datamodel.imports.Import>
@@ -228,6 +286,9 @@
       </org.drools.workbench.models.datamodel.imports.Import>
       <org.drools.workbench.models.datamodel.imports.Import>
         <type>eu.trentorise.game.model.InputData</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>eu.trentorise.game.model.PointConcept</type>
       </org.drools.workbench.models.datamodel.imports.Import>
     </imports>
   </imports>
