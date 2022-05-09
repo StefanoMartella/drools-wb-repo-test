@@ -246,7 +246,7 @@ double rewardGold = @{$baseGoldPointsReward};</text>
     </freeForm>
     <freeForm>
       <text>if (time &lt; @{$timeDelay}) {
-   rewardGold = rewardGold + 1.0</text>
+   rewardGold = rewardGold + 1.0;</text>
     </freeForm>
     <modify>
       <fieldValues>
