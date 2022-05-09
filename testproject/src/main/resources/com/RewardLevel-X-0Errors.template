@@ -176,7 +176,7 @@
         </constraints>
       </constraintList>
       <factType>PointConcept</factType>
-      <boundName>pointsScore</boundName>
+      <boundName>$pointsScore</boundName>
       <isNegated>false</isNegated>
       <window>
         <parameters/>
@@ -201,7 +201,7 @@
         </constraints>
       </constraintList>
       <factType>PointConcept</factType>
-      <boundName>goldCoinScore</boundName>
+      <boundName>$goldCoinScore</boundName>
       <isNegated>false</isNegated>
       <window>
         <parameters/>
@@ -295,7 +295,7 @@ double rewardPoints =   basePointsReward + ( basePointsReward - Math.round(time/
           <type>Double</type>
         </fieldValue>
       </fieldValues>
-      <variable>pointsScore</variable>
+      <variable>$pointsScore</variable>
     </modify>
     <freeForm>
       <text>double goldcoins =  $goldCoinScore.getScore();
@@ -315,7 +315,7 @@ double rewardGold = baseGoldPointsReward;</text>
           <type>Double</type>
         </fieldValue>
       </fieldValues>
-      <variable>goldCoinScore</variable>
+      <variable>$goldCoinScore</variable>
     </modify>
   </rhs>
   <imports>
