@@ -161,8 +161,9 @@
       <constraintList>
         <constraints>
           <fieldConstraint>
+            <value>points</value>
             <operator>==</operator>
-            <constraintValueType>0</constraintValueType>
+            <constraintValueType>1</constraintValueType>
             <expression>
               <parts/>
               <index>2147483647</index>
@@ -185,8 +186,9 @@
       <constraintList>
         <constraints>
           <fieldConstraint>
+            <value>gold coins</value>
             <operator>==</operator>
-            <constraintValueType>0</constraintValueType>
+            <constraintValueType>1</constraintValueType>
             <expression>
               <parts/>
               <index>2147483647</index>
@@ -333,10 +335,13 @@ double rewardGold = 2.0;</text>
     <entry>
       <string>__ID_KOL_NAME__</string>
       <list>
-        <string>1</string>
+        <string>3</string>
+        <string>0</string>
+        <string>4</string>
+        <string>5</string>
       </list>
     </entry>
   </table>
-  <idCol>1</idCol>
-  <rowsCount>1</rowsCount>
+  <idCol>5</idCol>
+  <rowsCount>4</rowsCount>
 </rule>
