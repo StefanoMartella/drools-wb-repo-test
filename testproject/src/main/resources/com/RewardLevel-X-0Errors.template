@@ -288,18 +288,21 @@ double rewardGold = baseGoldPointsReward;</text>
     <entry>
       <string>$baseGoldPointsReward</string>
       <list>
+        <string>1.0</string>
         <string>2.0</string>
       </list>
     </entry>
     <entry>
       <string>$level</string>
       <list>
+        <string>level-2</string>
         <string>level-1</string>
       </list>
     </entry>
     <entry>
       <string>$timeDelay</string>
       <list>
+        <string>30</string>
         <string>60</string>
       </list>
     </entry>
@@ -307,17 +310,20 @@ double rewardGold = baseGoldPointsReward;</text>
       <string>__ID_KOL_NAME__</string>
       <list>
         <string>0</string>
+        <string>0</string>
       </list>
     </entry>
     <entry>
       <string>$pointsName</string>
       <list>
         <string>points</string>
+        <string>points</string>
       </list>
     </entry>
     <entry>
       <string>$basePointsReward</string>
       <list>
+        <string>70.0</string>
         <string>50.0</string>
       </list>
     </entry>
@@ -325,11 +331,13 @@ double rewardGold = baseGoldPointsReward;</text>
       <string>$errors</string>
       <list>
         <string>0.0</string>
+        <string>0.0</string>
       </list>
     </entry>
     <entry>
       <string>$goldCoinsName</string>
       <list>
+        <string>gold coins</string>
         <string>gold coins</string>
       </list>
     </entry>
@@ -337,9 +345,10 @@ double rewardGold = baseGoldPointsReward;</text>
       <string>$actionId</string>
       <list>
         <string>taskCompleted</string>
+        <string>taskCompleted</string>
       </list>
     </entry>
   </table>
   <idCol>6</idCol>
-  <rowsCount>1</rowsCount>
+  <rowsCount>2</rowsCount>
 </rule>
