@@ -225,14 +225,9 @@
   </lhs>
   <rhs>
     <freeForm>
-      <text>int timeDelay = @{$timeDelay};
-double basePointsReward = @{$basePointsReward};
-double baseGoldPointsReward = @{$baseGoldPointsReward};</text>
-    </freeForm>
-    <freeForm>
       <text>int time = (int) $timeSpent;
 double points = $pointsScore.getScore();
-double rewardPoints =   basePointsReward + ( basePointsReward - Math.round(time/2.0));</text>
+double rewardPoints = @{$basePointsReward} + ( @{$basePointsReward} - Math.round(time/2.0));</text>
     </freeForm>
     <modify>
       <fieldValues>
@@ -246,13 +241,12 @@ double rewardPoints =   basePointsReward + ( basePointsReward - Math.round(time/
       <variable>$pointsScore</variable>
     </modify>
     <freeForm>
-      <text>double goldcoins =  $goldCoinScore.getScore();
-double rewardGold = baseGoldPointsReward;</text>
+      <text>double goldcoins = $goldCoinScore.getScore();
+double rewardGold = @{$baseGoldPointsReward};</text>
     </freeForm>
     <freeForm>
-      <text>if (time &lt; timeDelay) {
-   rewardGold = rewardGold + 1.0
-}</text>
+      <text>if (time &lt; @{$timeDelay}) {
+   rewardGold = rewardGold + 1.0</text>
     </freeForm>
     <modify>
       <fieldValues>
