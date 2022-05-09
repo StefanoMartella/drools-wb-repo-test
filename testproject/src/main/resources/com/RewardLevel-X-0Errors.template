@@ -211,9 +211,9 @@
       <constraintList>
         <constraints>
           <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
-            <value>$level</value>
+            <value>@{$level}</value>
             <operator>==</operator>
-            <constraintValueType>7</constraintValueType>
+            <constraintValueType>1</constraintValueType>
             <expression>
               <parts/>
               <index>2147483647</index>
@@ -337,12 +337,6 @@ double rewardGold = baseGoldPointsReward;</text>
   <packageName>com</packageName>
   <isNegated>false</isNegated>
   <table>
-    <entry>
-      <string>$level</string>
-      <list>
-        <string>level-1</string>
-      </list>
-    </entry>
     <entry>
       <string>$baseGoldPointsReward</string>
       <list>
