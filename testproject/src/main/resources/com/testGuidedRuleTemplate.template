@@ -279,6 +279,37 @@
 double points = $pointScore.getScore();
 double rewardPoints =   50.0 + ( 50.0 - Math.round(time/2.0));</text>
     </freeForm>
+    <modify>
+      <fieldValues>
+        <fieldValue>
+          <field>score</field>
+          <value>points + rewardPoints</value>
+          <nature>3</nature>
+          <type>Double</type>
+        </fieldValue>
+      </fieldValues>
+      <variable>pointsScore</variable>
+    </modify>
+    <freeForm>
+      <text>double goldcoins =  $goldCoinScore.getScore();
+double rewardGold = 2.0;</text>
+    </freeForm>
+    <freeForm>
+      <text>if (time &lt; 60) {
+   rewardGold = rewardGold + 2.0
+}</text>
+    </freeForm>
+    <modify>
+      <fieldValues>
+        <fieldValue>
+          <field>score</field>
+          <value>goldcoins + rewardGold</value>
+          <nature>3</nature>
+          <type>Double</type>
+        </fieldValue>
+      </fieldValues>
+      <variable>goldCoinScore</variable>
+    </modify>
   </rhs>
   <imports>
     <imports>
