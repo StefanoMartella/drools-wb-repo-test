@@ -13,9 +13,9 @@
       <constraintList>
         <constraints>
           <fieldConstraint>
-            <value>taskCompleted</value>
+            <value>$actionId</value>
             <operator>==</operator>
-            <constraintValueType>1</constraintValueType>
+            <constraintValueType>7</constraintValueType>
             <expression>
               <parts/>
               <index>2147483647</index>
@@ -37,65 +37,9 @@
       <constraintList>
         <constraints>
           <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
-            <value>0.0</value>
+            <value>$errors</value>
             <operator>==</operator>
-            <constraintValueType>3</constraintValueType>
-            <expression>
-              <parts/>
-              <index>2147483647</index>
-            </expression>
-            <parameters/>
-            <factType>InputData</factType>
-            <fieldName>get</fieldName>
-            <fieldType>java.lang.Object</fieldType>
-            <expLeftSide>
-              <binding>$errors</binding>
-              <parts>
-                <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
-                  <next class="field">
-                    <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
-                    <next class="method">
-                      <prev class="field" reference="../.."/>
-                      <name>get</name>
-                      <classType>java.lang.Object</classType>
-                      <genericType>java.lang.Object</genericType>
-                      <params class="linked-hash-map">
-                        <entry>
-                          <org.drools.workbench.models.datamodel.rule.ExpressionMethodParameterDefinition>
-                            <index>0</index>
-                            <dataType>java.lang.Object</dataType>
-                          </org.drools.workbench.models.datamodel.rule.ExpressionMethodParameterDefinition>
-                          <expression>
-                            <parts>
-                              <org.drools.workbench.models.datamodel.rule.ExpressionMethodParameter>
-                                <name>&quot;errors&quot;</name>
-                                <classType>java.lang.Object</classType>
-                                <genericType>java.lang.Object</genericType>
-                              </org.drools.workbench.models.datamodel.rule.ExpressionMethodParameter>
-                            </parts>
-                            <index>0</index>
-                          </expression>
-                        </entry>
-                      </params>
-                    </next>
-                    <name>data</name>
-                    <classType>java.util.Map</classType>
-                    <genericType>java.util.Map</genericType>
-                  </next>
-                  <name>InputData</name>
-                  <classType>InputData</classType>
-                  <genericType>InputData</genericType>
-                  <factType>InputData</factType>
-                </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
-                <field reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
-                <method reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next/next"/>
-              </parts>
-              <index>2147483647</index>
-            </expLeftSide>
-          </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
-          <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
-            <value></value>
-            <constraintValueType>0</constraintValueType>
+            <constraintValueType>7</constraintValueType>
             <expression>
               <parts/>
               <index>2147483647</index>
@@ -161,9 +105,9 @@
       <constraintList>
         <constraints>
           <fieldConstraint>
-            <value>points</value>
+            <value>$pointsName</value>
             <operator>==</operator>
-            <constraintValueType>1</constraintValueType>
+            <constraintValueType>7</constraintValueType>
             <expression>
               <parts/>
               <index>2147483647</index>
@@ -186,9 +130,9 @@
       <constraintList>
         <constraints>
           <fieldConstraint>
-            <value>gold coins</value>
+            <value>$goldCoinsName</value>
             <operator>==</operator>
-            <constraintValueType>1</constraintValueType>
+            <constraintValueType>7</constraintValueType>
             <expression>
               <parts/>
               <index>2147483647</index>
@@ -211,9 +155,9 @@
       <constraintList>
         <constraints>
           <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
-            <value>level-1</value>
+            <value>$level</value>
             <operator>==</operator>
-            <constraintValueType>1</constraintValueType>
+            <constraintValueType>7</constraintValueType>
             <expression>
               <parts/>
               <index>2147483647</index>
@@ -333,15 +277,42 @@ double rewardGold = 2.0;</text>
   <isNegated>false</isNegated>
   <table>
     <entry>
+      <string>$level</string>
+      <list>
+        <string>level-1</string>
+      </list>
+    </entry>
+    <entry>
       <string>__ID_KOL_NAME__</string>
       <list>
-        <string>3</string>
         <string>0</string>
-        <string>4</string>
-        <string>5</string>
+      </list>
+    </entry>
+    <entry>
+      <string>$pointsName</string>
+      <list>
+        <string>points</string>
+      </list>
+    </entry>
+    <entry>
+      <string>$errors</string>
+      <list>
+        <string>0.0</string>
+      </list>
+    </entry>
+    <entry>
+      <string>$goldCoinsName</string>
+      <list>
+        <string>gold conis</string>
+      </list>
+    </entry>
+    <entry>
+      <string>$actionId</string>
+      <list>
+        <string>taskCompleted</string>
       </list>
     </entry>
   </table>
-  <idCol>5</idCol>
-  <rowsCount>4</rowsCount>
+  <idCol>6</idCol>
+  <rowsCount>1</rowsCount>
 </rule>
