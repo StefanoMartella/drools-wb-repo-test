@@ -275,9 +275,9 @@
   </lhs>
   <rhs>
     <freeForm>
-      <text>int timeDelay = @{timeDelay};
-double basePointsReward = @{basePointsReward};
-double baseGoldPointsReward = @{baseGoldPointsReward};</text>
+      <text>int timeDelay = @{$timeDelay};
+double basePointsReward = @{$basePointsReward};
+double baseGoldPointsReward = @{$baseGoldPointsReward};</text>
     </freeForm>
     <freeForm>
       <text>int time = (int) $timeSpent;
@@ -342,15 +342,21 @@ double rewardGold = baseGoldPointsReward;</text>
       </list>
     </entry>
     <entry>
-      <string>__ID_KOL_NAME__</string>
+      <string>$baseGoldPointsReward</string>
       <list>
-        <string>0</string>
+        <string>2.0</string>
       </list>
     </entry>
     <entry>
-      <string>baseGoldPointsReward</string>
+      <string>$timeDelay</string>
       <list>
-        <string>2.0</string>
+        <string>60</string>
+      </list>
+    </entry>
+    <entry>
+      <string>__ID_KOL_NAME__</string>
+      <list>
+        <string>0</string>
       </list>
     </entry>
     <entry>
@@ -360,7 +366,7 @@ double rewardGold = baseGoldPointsReward;</text>
       </list>
     </entry>
     <entry>
-      <string>basePointsReward</string>
+      <string>$basePointsReward</string>
       <list>
         <string>50.0</string>
       </list>
@@ -369,12 +375,6 @@ double rewardGold = baseGoldPointsReward;</text>
       <string>$errors</string>
       <list>
         <string>0.0</string>
-      </list>
-    </entry>
-    <entry>
-      <string>timeDelay</string>
-      <list>
-        <string>60</string>
       </list>
     </entry>
     <entry>
