@@ -3,19 +3,33 @@
   <modelVersion>1.0</modelVersion>
   <attributes/>
   <metadataList/>
-  <lhs/>
+  <lhs>
+    <freeForm>
+      <text>Game( $gameId: id)
+Player($teamId : id, team == true)</text>
+    </freeForm>
+  </lhs>
   <rhs/>
   <imports>
-    <imports/>
+    <imports>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>eu.trentorise.game.model.Game</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>eu.trentorise.game.model.Player</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+    </imports>
   </imports>
   <packageName>com</packageName>
   <isNegated>false</isNegated>
   <table>
     <entry>
       <string>__ID_KOL_NAME__</string>
-      <list/>
+      <list>
+        <string>1</string>
+      </list>
     </entry>
   </table>
-  <idCol>0</idCol>
-  <rowsCount>0</rowsCount>
+  <idCol>1</idCol>
+  <rowsCount>1</rowsCount>
 </rule>
