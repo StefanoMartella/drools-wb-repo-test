@@ -1,5 +1,6 @@
 <rule>
   <name>Badges</name>
+  <parentName>Badges_0</parentName>
   <modelVersion>1.0</modelVersion>
   <attributes>
     <attribute>
@@ -74,11 +75,13 @@ update( $bc );</text>
       <string>$badgeCollectionName</string>
       <list>
         <string>medaglie</string>
+        <string>medaglie</string>
       </list>
     </entry>
     <entry>
       <string>$badgeName</string>
       <list>
+        <string>2 Green Medal</string>
         <string>Green Medal</string>
       </list>
     </entry>
@@ -86,21 +89,24 @@ update( $bc );</text>
       <string>__ID_KOL_NAME__</string>
       <list>
         <string>1</string>
+        <string>0</string>
       </list>
     </entry>
     <entry>
       <string>$pointName</string>
       <list>
         <string>passi</string>
+        <string>passis</string>
       </list>
     </entry>
     <entry>
       <string>$score</string>
       <list>
+        <string>30000</string>
         <string>10000</string>
       </list>
     </entry>
   </table>
   <idCol>1</idCol>
-  <rowsCount>1</rowsCount>
+  <rowsCount>2</rowsCount>
 </rule>
