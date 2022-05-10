@@ -1,6 +1,6 @@
 <rule>
   <name>Badges</name>
-  <parentName>Badges_0</parentName>
+  <parentName></parentName>
   <modelVersion>1.0</modelVersion>
   <attributes>
     <attribute>
