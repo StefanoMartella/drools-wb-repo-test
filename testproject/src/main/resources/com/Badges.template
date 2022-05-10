@@ -47,6 +47,9 @@
         <parameters/>
       </window>
     </fact>
+    <freeForm>
+      <text>$badge: &quot;@{$badgeName}&quot;</text>
+    </freeForm>
     <fact>
       <constraintList>
         <constraints>
@@ -63,43 +66,17 @@
             <fieldName>name</fieldName>
             <fieldType>String</fieldType>
           </fieldConstraint>
-          <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
-            <value></value>
-            <constraintValueType>0</constraintValueType>
-            <expression>
-              <parts/>
-              <index>2147483647</index>
-            </expression>
-            <parameters/>
-            <factType>BadgeCollectionConcept</factType>
-            <fieldName>@{$badge}</fieldName>
-            <fieldType>java.lang.String</fieldType>
-            <expLeftSide>
-              <binding>$badge</binding>
-              <parts>
-                <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
-                  <next class="text">
-                    <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
-                    <name>@{$badge}</name>
-                    <classType>java.lang.String</classType>
-                    <genericType>String</genericType>
-                  </next>
-                  <name>BadgeCollectionConcept</name>
-                  <classType>BadgeCollectionConcept</classType>
-                  <genericType>BadgeCollectionConcept</genericType>
-                  <factType>BadgeCollectionConcept</factType>
-                </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
-                <text reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
-              </parts>
-              <index>2147483647</index>
-            </expLeftSide>
-          </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
           <fieldConstraint>
-            <value>$badge</value>
             <operator>excludes</operator>
-            <constraintValueType>1</constraintValueType>
+            <constraintValueType>6</constraintValueType>
             <expression>
-              <parts/>
+              <parts>
+                <org.drools.workbench.models.datamodel.rule.ExpressionFieldVariable>
+                  <name>$badge</name>
+                  <classType>String</classType>
+                  <genericType>String</genericType>
+                </org.drools.workbench.models.datamodel.rule.ExpressionFieldVariable>
+              </parts>
               <index>2147483647</index>
             </expression>
             <parameters/>
@@ -140,6 +117,12 @@ update( $bc );</text>
       <string>$badgeCollectionName</string>
       <list>
         <string>medaglie</string>
+      </list>
+    </entry>
+    <entry>
+      <string>$badgeName</string>
+      <list>
+        <string>Green Medal</string>
       </list>
     </entry>
     <entry>
