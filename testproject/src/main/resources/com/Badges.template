@@ -25,6 +25,19 @@
             <fieldName>name</fieldName>
             <fieldType>String</fieldType>
           </fieldConstraint>
+          <fieldConstraint>
+            <value>$score</value>
+            <operator>&gt;=</operator>
+            <constraintValueType>7</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>PointConcept</factType>
+            <fieldName>score</fieldName>
+            <fieldType>Double</fieldType>
+          </fieldConstraint>
         </constraints>
       </constraintList>
       <factType>PointConcept</factType>
@@ -58,7 +71,8 @@
               <index>2147483647</index>
             </expression>
             <parameters/>
-            <fieldName>@{$badgeName}</fieldName>
+            <factType>BadgeCollectionConcept</factType>
+            <fieldName>@{$badge}</fieldName>
             <fieldType>java.lang.String</fieldType>
             <expLeftSide>
               <binding>$badge</binding>
@@ -66,7 +80,7 @@
                 <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
                   <next class="text">
                     <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
-                    <name>@{$badgeName}</name>
+                    <name>@{$badge}</name>
                     <classType>java.lang.String</classType>
                     <genericType>String</genericType>
                   </next>
@@ -81,8 +95,9 @@
             </expLeftSide>
           </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
           <fieldConstraint>
+            <value>$badge</value>
             <operator>excludes</operator>
-            <constraintValueType>0</constraintValueType>
+            <constraintValueType>1</constraintValueType>
             <expression>
               <parts/>
               <index>2147483647</index>
@@ -124,7 +139,7 @@ update( $bc );</text>
     <entry>
       <string>$badgeCollectionName</string>
       <list>
-        <string></string>
+        <string>medaglie</string>
       </list>
     </entry>
     <entry>
@@ -137,6 +152,12 @@ update( $bc );</text>
       <string>$pointName</string>
       <list>
         <string>passi</string>
+      </list>
+    </entry>
+    <entry>
+      <string>$score</string>
+      <list>
+        <string>10000</string>
       </list>
     </entry>
   </table>
