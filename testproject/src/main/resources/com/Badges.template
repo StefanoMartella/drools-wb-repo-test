@@ -1,21 +1,145 @@
 <rule>
   <name>Badges</name>
   <modelVersion>1.0</modelVersion>
-  <attributes/>
+  <attributes>
+    <attribute>
+      <attributeName>salience</attributeName>
+      <value>-10</value>
+    </attribute>
+  </attributes>
   <metadataList/>
-  <lhs/>
-  <rhs/>
+  <lhs>
+    <fact>
+      <constraintList>
+        <constraints>
+          <fieldConstraint>
+            <value>$pointName</value>
+            <operator>==</operator>
+            <constraintValueType>7</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>PointConcept</factType>
+            <fieldName>name</fieldName>
+            <fieldType>String</fieldType>
+          </fieldConstraint>
+        </constraints>
+      </constraintList>
+      <factType>PointConcept</factType>
+      <boundName>$pc</boundName>
+      <isNegated>false</isNegated>
+      <window>
+        <parameters/>
+      </window>
+    </fact>
+    <fact>
+      <constraintList>
+        <constraints>
+          <fieldConstraint>
+            <value>$badgeCollectionName</value>
+            <operator>==</operator>
+            <constraintValueType>7</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>BadgeCollectionConcept</factType>
+            <fieldName>name</fieldName>
+            <fieldType>String</fieldType>
+          </fieldConstraint>
+          <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+            <value></value>
+            <constraintValueType>0</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <fieldName>@{$badgeName}</fieldName>
+            <fieldType>java.lang.String</fieldType>
+            <expLeftSide>
+              <binding>$badge</binding>
+              <parts>
+                <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                  <next class="text">
+                    <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                    <name>@{$badgeName}</name>
+                    <classType>java.lang.String</classType>
+                    <genericType>String</genericType>
+                  </next>
+                  <name>BadgeCollectionConcept</name>
+                  <classType>BadgeCollectionConcept</classType>
+                  <genericType>BadgeCollectionConcept</genericType>
+                  <factType>BadgeCollectionConcept</factType>
+                </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                <text reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+              </parts>
+              <index>2147483647</index>
+            </expLeftSide>
+          </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+          <fieldConstraint>
+            <operator>excludes</operator>
+            <constraintValueType>0</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>BadgeCollectionConcept</factType>
+            <fieldName>badgeEarned</fieldName>
+            <fieldType>Collection</fieldType>
+          </fieldConstraint>
+        </constraints>
+      </constraintList>
+      <factType>BadgeCollectionConcept</factType>
+      <boundName>$bc</boundName>
+      <isNegated>false</isNegated>
+      <window>
+        <parameters/>
+      </window>
+    </fact>
+  </lhs>
+  <rhs>
+    <freeForm>
+      <text>$bc.getBadgeEarned().add($badge);
+update( $bc );</text>
+    </freeForm>
+  </rhs>
   <imports>
-    <imports/>
+    <imports>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>eu.trentorise.game.model.PointConcept</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>eu.trentorise.game.model.BadgeCollectionConcept</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+    </imports>
   </imports>
   <packageName>com</packageName>
   <isNegated>false</isNegated>
   <table>
     <entry>
+      <string>$badgeCollectionName</string>
+      <list>
+        <string></string>
+      </list>
+    </entry>
+    <entry>
       <string>__ID_KOL_NAME__</string>
-      <list/>
+      <list>
+        <string>1</string>
+      </list>
+    </entry>
+    <entry>
+      <string>$pointName</string>
+      <list>
+        <string>passi</string>
+      </list>
     </entry>
   </table>
-  <idCol>0</idCol>
-  <rowsCount>0</rowsCount>
+  <idCol>1</idCol>
+  <rowsCount>1</rowsCount>
 </rule>
